@@ -6,3 +6,7 @@ runs:
 branding:
   icon: "git-pull-request"
   color: "blue"
+inputs:
+  args:
+    description: 'Arguments to pass to action'
+    required: false
