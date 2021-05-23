@@ -53,7 +53,8 @@ async function main() {
   } else if (args.debug) {
     logger.level = "debug";
   }
-
+  logger.level = "trace";
+  
   checkOldConfig();
 
   const token = env("GITHUB_TOKEN");
