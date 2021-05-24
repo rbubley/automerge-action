@@ -18293,6 +18293,8 @@ async function main() {
 
   const args = parser.parse_args();
 
+  logger.level = "trace"; // default to trace on .
+
   if (args.trace) {
     logger.level = "trace";
   } else if (args.debug) {
