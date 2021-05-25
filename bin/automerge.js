@@ -48,12 +48,12 @@ async function main() {
 
   const args = parser.parse_args();
 
+  logger.level = "trace";
   if (args.trace) {
     logger.level = "trace";
   } else if (args.debug) {
     logger.level = "debug";
   }
-  logger.level = "trace";
   
   checkOldConfig();
 
